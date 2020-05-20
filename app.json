@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/treeHole/treeHole",
+    "pages/post/post",
+    "pages/test/test",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#A9B7B7",
+    "selectedColor": "#FF513D",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/icons/首页（选中）.png",
+        "iconPath": "images/icons/首页.png",
+        "pagePath": "pages/treeHole/treeHole",
+        "text": "树洞"
+      },
+      {
+        "selectedIconPath": "images/icons/挂号（选中）.png",
+        "iconPath": "images/icons/挂号.png",
+        "pagePath": "pages/post/post",
+        "text": "驿站"
+      },
+      {
+        "selectedIconPath": "images/icons/病历（选中）.png",
+        "iconPath": "images/icons/病历.png",
+        "pagePath": "pages/test/test",
+        "text": "测评"
+      },
+      {
+        "selectedIconPath": "images/icons/我的（选中）.png",
+        "iconPath": "images/icons/我的.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

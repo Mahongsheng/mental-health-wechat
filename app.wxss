@@ -1,0 +1,29 @@
+/**app.wxss**/
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
+page{
+  background-color: #EEEEEE;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.page{
+  height: 100%;
+}
+
+.section{
+  background-color: white;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}

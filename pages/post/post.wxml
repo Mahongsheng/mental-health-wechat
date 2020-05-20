@@ -1,0 +1,12 @@
+<!--pages/post/post.wxml-->
+<view class="page">
+  <image src='https://s1.ax1x.com/2020/05/20/Y7d79O.jpg' mode='widthFix' class='png' style='width:100%;height:100%'></image>
+
+  <view class='nav-list'>
+    <navigator hover-class='none' class="nav-li bg-{{item.color}}" style="width: 45%;margin: 0 2.5% 40rpx;" wx:for="{{buttonElements}}" wx:key="title">
+      <view class="nav-title">{{item.title}}</view>
+      <view class="nav-name">{{item.name}}</view>
+      <text class='cuIcon-{{item.icon}}'></text>
+    </navigator>
+  </view>
+</view>
