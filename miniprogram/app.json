@@ -1,9 +1,10 @@
 {
   "cloud": true,
   "pages": [
+    "pages/index/index",
     "pages/test/home/home",
     "pages/treeHole/home/home",
-    "pages/index/index",
+  
     "pages/post/postArticle/postArticle",
     "pages/test/conclusion/conclusion",
     "pages/mine/home/home",

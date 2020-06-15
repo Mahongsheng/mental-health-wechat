@@ -1,29 +1,20 @@
 <!--pages/post/postCureDetail/postCureDetail.wxml-->
-<view class="bg-white">
-  <view class="solid-bottom text-xl padding">
-    <text class="text-black text-bold">{{cure.title}}</text>
-  </view>
-  <view class="solid-bottom ext-lg padding">
-    <view class="cu-capsule">
-     
-      <view class="cu-tag line-red">
+<view class="sheet">
+  <view class="title">{{cure.title}}</view>
+
+      <view class="tag">
         {{cure.q_name}}
       </view>
-    </view>
-  </view>
-  <view class="flex-sub" style="text-align: justify;">
-    <view class="solid-bottom text-df padding">{{cure.conclusion}}</view>
-  </view>
-  <view class='btn-func'>
+
+  <view class="conclusion">{{cure.conclusion}}</view>
+<view class="btn-panel">
     <button class="btn" bindtap='back'>确定</button>
-  </view>
+</view>
 </view>
 
 <!-- <view class="panel">
-  <view class="title">{{cure.title}}</view>
+  
   <view class="q_name">{{cure.q_name}}</view>
   <view class="conclusion">{{cure.conclusion}}</view>
 </view>
-<view class="btn-panel">
-    <button class="btn" bindtap='back'>确定</button>
-</view> -->
+ -->
