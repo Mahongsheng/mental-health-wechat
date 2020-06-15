@@ -1,0 +1,14 @@
+<!--miniprogram/pages/advance/advance.wxml-->
+<view class="content">
+  <view class="text-content">
+    <view class='input-content'>
+      <input bindinput="bindKeyInput" placeholder="开始你的表演~" />
+    </view>
+
+  </view>
+
+  <view class='btn-func'>
+    <button class="btn" bindtap='saveReplay' open-type="getUserInfo">发射神评</button>
+  </view>
+
+</view>

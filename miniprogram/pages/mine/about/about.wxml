@@ -1,0 +1,11 @@
+<!--miniprogram/pages/mine/about/about.wxml-->
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于我们</view>
+  <view class='text-content'>
+    <view>Hi！您好~欢迎使用对影小程序APP！</view>
+    <view class='margin-top-sm'>我们是东北大学软件学院的四个大三学生，制作此程序的初衷是帮助那些身处心灵困境，或者不知道自己是否有心理问题的人们。</view>
+    <view class="margin-top-sm">希望你们能够在树洞中尽情倾诉，享受驿站中的文章、音乐、知识与疗法，在测评中找到自我~</view>
+    <view class='margin-top-sm'>该项目永久免费，同时如果您在使用的过程中有任何问题，您也可以联系我们~</view>
+    <view class='margin-top-sm'>更多功能敬请期待！</view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+<!--pages/test/test.wxml-->
+<swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{3}}" wx:key="*this">
+    <image class="swiper-image" src="https://6d65-mentalhealthwechat-1s5bo-1302210938.tcb.qcloud.la/test_home-swiper/1-{{index+1}}.jpg?sign=3f9a92180f60d972dac1dd81a274c36f&t=1592214957" mode='aspectFill'></image>
+  </swiper-item>
+</swiper>
+<view class="VerticalBox">
+  <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(100vh - 375rpx)">
+    <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key wx:for-item="item" bindtap='tabSelect' data-id="{{index}}">
+      {{item.class}}
+    </view>
+  </scroll-view>
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+    <view wx:for="{{list}}" wx:key id="main-{{index}}" style="padding-left:1rpx">
+      <!-- <view class='cu-bar solid-bottom bg-white'>
+        <view class='action'>
+          <text class='cuIcon-title text-green'></text> {{item.type}} </view>
+      </view> -->
+      <!-- 从这开始 -->
+      <view class="cu-list menu-avatar" style="margin:0;" wx:for="{{questionnaire_list}}" wx:key="cureItemid" wx:for-item="cureItem" wx:if="{{item.id == cureItem.id}}">
+        <navigator class="item" url="/pages/test/test-try/test-try?q_name={{cureItem.title}}">
+          <view class="padding-xl radius shadow-blur bg-img" style="background-image:url(https://6d65-mentalhealthwechat-1s5bo-1302210938.tcb.qcloud.la/test_home_background/{{index+1}}.jpg?sign=485602b68c1495dbd12f5dc314d294ca&t=1592195473);">
+            <view>
+              <text class="text-cut">{{cureItem.title}}</text>
+              <!-- <view class="cu-tag round bg-orange sm">{{cureItem.tag}}</view> -->
+            </view>
+            <!-- <view class="text-gray text-sm flex">
+              <text class="text-cut">{{cureItem.description}}</text>
+            </view> -->
+          </view>
+
+          <!-- <view class="action">
+            <view class="text-grey text-xs">22:20</view>
+            <view class="cu-tag round bg-red sm">5</view>
+          </view> -->
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>

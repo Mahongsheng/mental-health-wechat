@@ -1,0 +1,107 @@
+/* miniprogram/pages/treeHole/treeHole.wxss */
+
+/* 发表按钮 */
+
+.publish-button {
+  height: 90rpx;
+  width: 90rpx;
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+  z-index: 1;
+}
+
+/* 总面板 */
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0;
+}
+
+/* 单元面板 */
+
+.container {
+  margin-bottom: 15rpx;
+  margin-left: 15rpx;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  box-shadow: 0 2px 5px #eee;
+  background-color: white;
+  padding: 20rpx;
+  width: 720rpx;
+  border-radius: 20rpx;
+}
+
+/* 单元面板-顶部 */
+
+.user-info {
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  line-height: 80rpx;
+}
+
+/* 发表用户头像 */
+
+.user-head {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 20rpx;
+  border: 5rpx solid #eee;
+}
+
+/* 发表用户昵称 */
+
+.user-name {
+  font-weight: 500;
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 10rpx;
+  color: rgb(58, 94, 148);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 180rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+}
+
+/* 详情 */
+
+.content {
+  width: 98%;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(40, 40, 40);
+  word-break: break-all;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* margin: 15rpx auto; */
+}
+
+.content-text {
+  text-align: justify;
+  width: 18rem;
+
+  margin-left: 80rpx;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 10rpx;
+}
+
+/* 发表时间 */
+
+.user-publish-time {
+  font-weight: 500;
+  font-size: 30rpx;
+  color: rgba(112, 111, 111, 0.9);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

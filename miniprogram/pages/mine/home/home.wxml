@@ -1,0 +1,53 @@
+<!--pages/mine/mine.wxml-->
+<view class="UCenter-bg">
+  <image src="{{hasUserInfo ? userInfo.avatarUrl : userLogoSrc}}" class="png" mode="widthFix"></image>
+  <button class="cu-btn bg-white margin-tb-sm lg" wx:if="{{!hasUserInfo}}" bindgetuserinfo="GetUserInfo" open-type="getUserInfo">登录</button>
+  <view class="text-xl">{{userInfo.nickName}}
+  </view>
+</view>
+
+<view class="cu-list menu card-menu margin-top">
+  <view class="cu-item">
+    <navigator class="content" hover-class="none" url="/pages/treeHole/treeHole" open-type="switchTab">
+      <text class="cuIcon-likefill text-red"></text>
+      <text class="text-grey">我的树洞</text>
+    </navigator>
+  </view>
+
+  <view class="cu-item">
+    <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
+      <text class="cuIcon-favorfill text-orange"></text>
+      <text class="text-grey">我的收藏</text>
+    </navigator>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <navigator class="content" hover-class="none" url="../history/history" open-type="switchTab">
+      <text class="cuIcon-emojiflashfill text-pink"></text>
+      <text class="text-grey">我的倾诉</text>
+    </navigator>
+  </view>
+
+  <view class="cu-item">
+    <navigator class="content" hover-class="none" url="/pages/test/test" open-type="switchTab">
+      <text class="cuIcon-formfill text-gray"></text>
+      <text class="text-grey">我的评测</text>
+    </navigator>
+  </view>
+</view>
+
+<view class="cu-list menu card-menu margin-top">
+  <view class="cu-item">
+    <navigator class="content" url="/pages/mine/about/about" open-type="navigate">
+      <text class="cuIcon-questionfill text-blue"></text>
+      <text class="text-grey">关于我们</text>
+    </navigator>
+  </view>
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <navigator class="content" hover-class="none" url="/pages/mine/advance/advance" open-type="navigate">
+      <text class="cuIcon-communityfill text-red"></text>
+      <text class="text-grey">问题反馈</text>
+    </navigator>
+  </view>
+</view>

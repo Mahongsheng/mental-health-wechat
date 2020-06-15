@@ -1,0 +1,16 @@
+<!--pages/post/post.wxml-->
+<scroll-view scroll-y class="scrollPage">
+  <!-- <cu-custom src="https://image.weilanwl.com/color2.0/plugin/cjkz2329.jpg">
+    <view slot="content">
+      <image src="https://image.weilanwl.com/color2.0/plugin/cjkz2329.jpg" mode="widthFix"></image>
+    </view>
+  </cu-custom> -->
+  <view class="cu-card">
+    <navigator class="cu-item bg-img shadow-blur" style="background-image:url({{item.img}})" url="{{item.url}}" wx:for="{{postElements}}" wx:key="title">
+      <view class="cardTitle">
+        {{item.title}}
+      </view>
+    </navigator>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

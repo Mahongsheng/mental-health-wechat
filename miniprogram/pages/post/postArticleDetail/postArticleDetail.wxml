@@ -1,0 +1,21 @@
+<!--miniprogram/pages/post/postArticleDetail/postArticleDetail.wxml-->
+<view class="bg-white">
+  <view class="solid-bottom text-xl padding">
+    <text class="text-black text-bold">{{article.title}}</text>
+  </view>
+  <view class="solid-bottom text-lg padding">
+    <view class="cu-capsule">
+      <view class="cu-tag bg-red">
+        {{article.authorName}}
+      </view>
+      <view class="cu-tag line-red">
+        {{article.createTime}}
+      </view>
+    </view>
+  </view>
+  <view class="flex-sub" style="text-align: justify;">
+    <view class="solid-bottom text-df padding">
+      <towxml nodes="{{content}}" />
+    </view>
+  </view>
+</view>

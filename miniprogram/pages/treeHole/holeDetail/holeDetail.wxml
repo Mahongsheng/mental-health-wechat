@@ -1,0 +1,63 @@
+<!--miniprogram/pages/homeDetail/homeDetail.wxml-->
+
+  <view class='container-content'>
+    <view class='user-info'>
+      <image class='user-head' src='{{topic.user.avatarUrl}}' mode='aspectFill'></image>
+        <view class='user-name'>{{topic.user.nickName}}</view>
+        <view class='user-publish-time'>{{topic.date}}</view>
+    </view>
+    <view class='content'>
+      <!-- 显示文本 -->
+      <view wx:if="{{topic.content != ''}} && {{topic.images.length > 0}}">
+        <text class='content-text'>{{topic.content}}</text>
+        <block wx:for="{{topic.images}}" wx:for-index="idx"  wx:key="key">
+          <image class='content-img' src='{{item}}' mode='aspectFill' bindtap="previewImg" data-index='{{idx}}'></image>
+        </block>
+      </view>
+      <!-- 显示图片 -->
+      <!-- <view wx:if="{{topic.images.length > 0}}">
+        <block wx:for="{{topic.images}}" wx:for-index="idx">
+          <image class='content-img' src='{{item}}' mode='aspectFill' bindtap="previewImg" data-index='{{idx}}'></image>
+        </block>
+      </view> -->
+    </view>
+  </view>
+  <!-- 显示回复列表 -->
+  <view class='replay-content-panel' wx:if="{{replays.length > 0}}">
+   <view class="title">回复信箱</view>
+    <view wx:for="{{replays}}" wx:for-index="idx" wx:key="key">
+        <view class='replay-container' bindtap='onItemClick' data-topicId='{{item._id}}' data-openid='{{item._openid}}'>
+            <!-- 头像和昵称 -->
+              <view class='replay-user-info'>
+              <!-- 头像 -->
+                <image class='replay-user-head' src='{{item.user.avatarUrl}}' mode='aspectFill'></image>
+                <!-- 昵称 -->
+                  <view class='replay-user-name'>{{item.user.nickName}}</view>
+                  <view class='replay-user-publish-time'>{{idx+1}}楼</view>
+              </view>
+              <view class='replay-content'>
+
+                <!-- 文本 -->
+                  <view class='replay-content-text'>{{item.content}}</view>
+                  <!-- 如果由图片则展示图片 -->
+                  <!-- <scroll-view class='content-scroll' scroll-x='true'>
+                    <view wx:for="{{item.images}}" wx:key="key">
+                      <image class='content-img' src='{{item}}' mode='aspectFill'></image>
+                    </view>
+                  </scroll-view> -->
+      
+              </view>
+
+            </view>
+    </view>
+  </view>
+<view class="fill"></view>
+
+<view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
+
+  <input class="solid-bottom bg-gray" id="reply-content" style="border-radius:10rpx" bindinput="bindKeyInput"  bindfocus="InputFocus" bindblur="InputBlur" adjust-position="{{false}}" focus="false" maxlength="300" cursor-spacing="10" value="{{content}}"></input>
+
+  <button class="cu-btn shadow bg-green" style="width:130rpx;color:white;"  bindtap='saveReplay' open-type="getUserInfo">回复</button>
+</view>
+
+

@@ -1,0 +1,15 @@
+<!--miniprogram/pages/advance/advance.wxml-->
+<view class="content">
+  <form bindsubmit="formSubmit">
+    <view class="cu-form-group margin-top">
+      <input placeholder="写个标题~"></input>
+    </view>
+    <view class="cu-form-group align-start">
+      <textarea maxlength="-1" name="input-content" type="text" placeholder="输入详细描述~" value="{{textContent}}" bindblur='getTextAreaContent' style="height:500rpx;"></textarea>
+    </view>
+    <view class='btn-func'>
+      <button class="cu-btn bg-red margin-tb-sm lg" formType='submit' open-type="getUserInfo">提交意见</button>
+    </view>
+  </form>
+
+</view>

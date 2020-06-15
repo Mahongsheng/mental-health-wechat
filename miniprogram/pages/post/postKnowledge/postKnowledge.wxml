@@ -1,0 +1,29 @@
+<!--miniprogram/pages/post/postKnowledge/postKnowledge.wxml-->
+<navigator class="cu-card case no-card" wx:for="{{knowledgeList}}" wx:key="id" url="/pages/post/postKnowledgeDetail/postKnowledgeDetail?id={{item.id}}">
+  <view class="cu-item shadow">
+    <view class="image">
+      <image src="{{item.img}}" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">{{item.tag}}</view>
+      <view class="cu-bar bg-shadeBottom">
+        <text class="text-cut">{{item.description}}</text>
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://s1.ax1x.com/2020/06/10/t7tQg0.th.png);"></view>
+        <view class="content flex-sub">
+          <view class="text-grey">{{item.authorName}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            {{item.createTime}}
+            <view class="text-gray text-sm">
+              <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+              <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+              <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</navigator>

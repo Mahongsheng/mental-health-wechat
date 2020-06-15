@@ -1,0 +1,17 @@
+<!--miniprogram/pages/post/post_article/post-article.wxml-->
+<navigator class="cu-card article no-card" wx:for="{{articleList}}" wx:key="title" url="/pages/post/postArticleDetail/postArticleDetail?id={{item.id}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">{{item.title}}</view>
+    </view>
+    <view class="content">
+      <image src="{{item.img}}" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">{{item.description}}</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">{{item.tag}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</navigator>

@@ -1,0 +1,19 @@
+<!--pages/post/postCureDetail/postCureDetail.wxml-->
+<view class="bg-white">
+  <view class="solid-bottom text-xl padding">
+    <text class="text-black text-bold">{{cure.title}}</text>
+  </view>
+  <view class="solid-bottom ext-lg padding">
+    <view class="cu-capsule">
+      <view class="cu-tag bg-red">
+        {{cure.createTime}}
+      </view>
+      <view class="cu-tag line-red">
+        {{cure.tag}}
+      </view>
+    </view>
+  </view>
+  <view class="flex-sub" style="text-align: justify;">
+    <towxml nodes="{{content}}" />
+  </view>
+</view>

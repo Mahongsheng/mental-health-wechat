@@ -1,0 +1,63 @@
+
+<!--miniprogram/pages/testSAS/testSAS.wxml-->
+<view class='container'>
+    <swiper class='sheet' current='{{id}}'>
+      <block wx:for="{{problem}}">
+        <swiper-item>
+          <form bindsubmit='submit'>
+          <view class="cu-progress round sm striped" id="progress">
+            <view class="bg-green" style="width:{{((id+1)/num) * 100}}%;"></view>
+          </view>
+          <view class='id'>{{id+1}} / {{num}}</view>
+            <view class='naire'>
+              <view class='question'>{{item.question}}</view>
+              <!--view class='border' /-->
+              <radio-group class='radio-group' name='answer' bindchange='radioChange'>
+                <label class='radio'><radio value="A" color='#fcbe39'/><view>{{item.option.a}}</view></label>
+                <label class='radio'><radio value="B" color='#fcbe39'/><view>{{item.option.b}}</view></label>
+                <label class='radio'><radio value="C" color='#fcbe39'/><view>{{item.option.c}}</view></label>
+                <label class='radio'><radio value="D" color='#fcbe39'/><view>{{item.option.d}}</view></label>
+              </radio-group>
+            </view>
+            <view class='button-group'>
+              <button class='button' hover-class='none' bindtap='lastq' disabled='{{id==0}}'>上一题</button>
+              <view class='fill'></view>
+              <button wx:if="{{id+1<num}}" class='button' hover-class='none' form-type='submit' bindtap='nextq'>下一题</button>
+              <button wx:else class='button' hover-class='none' form-type='submit' bindtap='formSubmit'>提交</button>
+            </view>
+            
+          </form>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<!--<view class="weui-cells__title title">用户{{user}}</view>
+<view class="content">
+  <view wx:for="{{problem}}" wx:for-index="idx" wx:for-item="item">
+    <view class="weui-cells__title  title2">{{item.question}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <radio-group bindchange="radioChange" data-id="{{id}}">
+        <label class='radio'>
+          <radio value="A" color='#1AE694' />{{item.option.a}}</label>
+        <label class='radio'>
+          <radio value="B" color='#1AE694' />{{item.option.b}} </label>
+
+        <label class='radio'>
+          <radio value="C" color='#1AE694' />{{item.option.c}} </label>
+
+        <label class='radio'>
+          <radio value="D" color='#1AE694' />{{item.option.d}} </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="weui-btn-area btn">
+    <button class="weui-btn" type="primary" bindtap="btnSubmit">确定</button>
+  </view>
+</view>-->
+
+
+
+
+    
+  

@@ -1,0 +1,18 @@
+/* miniprogram/pages/test/conclusion/conclusion.wxss */
+
+
+.panel{
+  background: #fff;
+  border-radius: 20rpx;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin: 50rpx;
+  width: 650rpx;
+
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+}

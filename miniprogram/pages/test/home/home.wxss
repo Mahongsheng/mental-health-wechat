@@ -1,0 +1,55 @@
+/* pages/test/test.wxss */
+.VerticalNav.nav {
+  width: 200rpx;
+  white-space: initial;
+}
+
+.VerticalNav.nav .cu-item {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  margin: 0;
+  border: none;
+  /* height: 50px; */
+  position: relative;
+}
+
+.item{
+  margin: 20rpx;
+}
+
+.swiper-image{
+  padding: 20rpx;
+  border-radius: 90rpx;
+}
+
+.text-cut
+{
+  color: white;
+  font-size: medium;
+  font-family:"Microsoft YaHei";
+
+  /* font-weight: bold; */
+}
+.VerticalNav.nav .cu-item.cur {
+  background-color: #fff;
+}
+.VerticalNav.nav .cu-item.cur::after {
+
+  content: "";
+  width: 8rpx;
+  height: 30rpx;
+  border-radius: 10rpx 0 0 10rpx;
+  position: absolute;
+  background-color: currentColor;
+  top: 0;
+  right: 0rpx;
+  bottom: 0;
+  margin: auto;
+}
+.VerticalBox{
+  display: flex;
+}
+.VerticalMain{
+  background-color: #fff;
+}

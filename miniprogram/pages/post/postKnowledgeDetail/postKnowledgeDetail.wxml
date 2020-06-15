@@ -1,0 +1,19 @@
+<!--miniprogram/pages/post/postKnowledgeDetail/postKnowledgeDetail.wxml-->
+<view class="bg-white">
+  <view class="solid-bottom text-xl padding">
+    <text class="text-black text-bold">{{knowledge.title}}</text>
+  </view>
+  <view class="solid-bottom ext-lg padding">
+    <view class="cu-capsule">
+      <view class="cu-tag bg-red">
+        提出者
+      </view>
+      <view class="cu-tag line-red">
+        {{knowledge.authorName}}
+      </view>
+    </view>
+  </view>
+  <view class="flex-sub" style="text-align: justify;">
+    <towxml nodes="{{content}}" />
+  </view>
+</view>

@@ -1,0 +1,69 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/test/home/home",
+    "pages/treeHole/home/home",
+    "pages/index/index",
+    "pages/post/postArticle/postArticle",
+    "pages/test/conclusion/conclusion",
+    "pages/mine/home/home",
+    "pages/treeHole/publish/publish",
+    "pages/treeHole/holeDetail/holeDetail",
+    "pages/treeHole/reply/reply",
+    "pages/test/test-try/test-try",
+    "pages/post/home/home",
+    "pages/post/postArticleDetail/postArticleDetail",
+    "pages/post/postMusic/postMusic",
+    "pages/post/postKnowledge/postKnowledge",
+    "pages/post/postKnowledgeDetail/postKnowledgeDetail",
+    "pages/post/postCure/postCure",
+    "pages/post/postCureDetail/postCureDetail",
+    "pages/mine/about/about",
+    "pages/mine/advance/advance"
+  ],
+  "usingComponents": {
+    "towxml": "/towxml/towxml"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF513D",
+    "navigationBarTitleText": "对影",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#A9B7B7",
+    "selectedColor": "#FF513D",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "selectedIconPath": "images/icons/树洞_激活.png",
+        "iconPath": "images/icons/树洞_未激活.png",
+        "pagePath": "pages/treeHole/home/home",
+        "text": "树洞"
+      },
+      {
+        "selectedIconPath": "images/icons/驿站_激活.png",
+        "iconPath": "images/icons/驿站_未激活.png",
+        "pagePath": "pages/post/home/home",
+        "text": "驿站"
+      },
+      {
+        "selectedIconPath": "images/icons/测评_激活.png",
+        "iconPath": "images/icons/测评_未激活.png",
+        "pagePath": "pages/test/home/home",
+        "text": "测评"
+      },
+      {
+        "selectedIconPath": "images/icons/我的_激活.png",
+        "iconPath": "images/icons/我的_未激活.png",
+        "pagePath": "pages/mine/home/home",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+/* pages/test/test-try/test-try.wxss */
+
+/* miniprogram/pages/testSAS/testSAS.wxss */
+
+page {
+ background: #fcbe3960;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#progress{
+  margin: 40rpx;
+  height: 30rpx;
+  width: 570rpx;
+}
+ 
+
+.sheet {
+  background: #fff;
+  border-radius: 20rpx;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin: 50rpx;
+  height: 100%;
+  width: 650rpx;
+}
+.naire {
+  height: 70%;
+}
+
+.question {
+  font-size: large;
+  font-weight: bold;
+  margin: 40rpx;
+  padding: 20rpx;
+
+  border-radius: 20rpx;
+  border: 10rpx solid #fcbe39;
+}
+.border {
+  height: 2rpx;
+  width: 90%;
+  background-color: #d4d4d4;
+  margin: 16rpx auto;
+}
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  text-indent: 14rpx;
+  margin-top: 40rpx;
+}
+.radio {
+  display: flex;
+
+  margin: 20rpx 40rpx;
+  padding: 20rpx;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 20rpx;
+  background-color: #fcbe39;
+  font-size: medium;
+}
+
+radio{
+  /* cursor: pointer; */
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 40rpx;
+  left: 70rpx;
+}
+.button {
+  background: #fcbe39;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 20rpx;
+  width: 5rem;
+  height: 3rem;
+  line-height: 2rem;
+
+  margin: 20rpx;
+}
+
+.fill{
+  background-color: rgb(0, 0, 0, 0);
+  border: 0;
+  width: 80rpx;
+  padding: 0;
+}
+
+.button::after {
+  border: 0;
+}
+.id {
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  color: #c2c2c2;
+  margin: auto;
+}

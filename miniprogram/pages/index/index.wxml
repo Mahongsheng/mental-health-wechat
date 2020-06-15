@@ -1,0 +1,31 @@
+<!--index.wxml-->
+
+<view class='container'>
+  <!--头像框-->
+  <view class="userinfo">
+    <!--在用户未授权时显示小程序图标-->
+    <block wx:if="{{!hasUserInfo || !canIUse}}">
+      <image  class="userinfo-avatar" src="/images/logo.png" mode="cover"></image>
+      <text class="userinfo-nickname">{{defaultName}}</text>
+    </block>
+    <!--用户授权后的头像-->
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <!--进入NEUC按钮-->
+  <view class="welcomeButton">
+    <block wx:if="{{!hasUserInfo || !canIUse}}">
+      <button class='getUserinfo' wx:if="{{!hasUserInfo || !canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <text>{{buttonText}}</text>
+      </button>
+    </block>
+    <block wx:else>
+      <button class="usermotto" bindtap="bindViewTap" >
+        <text>{{buttonText}}</text>
+      </button>
+    </block>
+  </view>
+</view>
