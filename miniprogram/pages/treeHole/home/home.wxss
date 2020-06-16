@@ -84,9 +84,8 @@
 
 .content-text {
   text-align: justify;
-  width: 18rem;
-
-  margin-left: 80rpx;
+  width: 100%;
+  padding: 20rpx 0rpx 20rpx 0rpx;
 }
 
 .footer {
