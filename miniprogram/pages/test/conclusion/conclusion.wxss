@@ -1,18 +1,59 @@
-/* miniprogram/pages/test/conclusion/conclusion.wxss */
+/* pages/category/category.wxss */
 
-
-.panel{
-  background: #fff;
+.sheet{
+  margin: 20rpx;
   border-radius: 20rpx;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  background-color: white;
+}
 
-  margin: 50rpx;
-  width: 650rpx;
+.title{
+  padding: 40rpx;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+
+  color: orange;
+}
+
+.tag{
 
   text-align: center;
-  font-size: medium;
+  font-size: large;
   font-weight: bold;
+
+  color: orange;
+
+  border: 2rpx solid orange;
+  border-radius: 20rpx;
+
+  width: 650rpx;
+  margin-left: 30rpx;
+}
+
+.conclusion{
+  word-wrap: break-word;
+  padding: 30rpx;
+
+  margin-left: 5rpx;
+
+  font-size: medium;
+
+  height: 34rem;
+}
+
+.button-panel{
+  border-radius: 20rpx;
+  width: 710rpx;
+  margin: 20rpx;
+
+  background-color: orange;
+}
+
+.btn{
+  border-radius: 20rpx;
+  margin: 20rpx;
+
+  background-color: orange;
+  color: white;
 }

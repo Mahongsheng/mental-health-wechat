@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userLogoSrc: "../../../images/pictures/User.png",
+    userLogoSrc: "../../../images/logo.png",
     userInfo:{}
   },
   GetUserInfo(e) {
