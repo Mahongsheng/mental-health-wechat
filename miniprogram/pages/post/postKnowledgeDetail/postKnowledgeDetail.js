@@ -35,18 +35,30 @@ Page({
               theme: 'light', // 主题，默认`light`
             });
             that.setData({
+              knowledge: {
+                title: _knowledge.title,
+                createTime: _knowledge.create_time,
+                authorName: _knowledge.author_name
+              },
               content: result
+            })
+          },
+          fail: function(res) {
+            that.setData({
+              knowledge: {
+                title: "出现了bug"
+              }
             })
           }
         });
 
-        that.setData({
-          knowledge: {
-            title: _knowledge.title,
-            createTime: _knowledge.create_time,
-            authorName: _knowledge.author_name
-          }
-        });
+        // that.setData({
+        //   knowledge: {
+        //     title: _knowledge.title,
+        //     createTime: _knowledge.create_time,
+        //     authorName: _knowledge.author_name
+        //   }
+        // });
       }
     })
   },

@@ -1,8 +1,8 @@
 {
   "cloud": true,
   "pages": [
-    "pages/test/home/home",
     "pages/treeHole/home/home",
+    "pages/test/home/home",
     "pages/index/index",
     "pages/post/postArticle/postArticle",
     "pages/test/conclusion/conclusion",
@@ -21,9 +21,6 @@
     "pages/mine/about/about",
     "pages/mine/advance/advance"
   ],
-  "usingComponents": {
-    "towxml": "/towxml/towxml"
-  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FF513D",

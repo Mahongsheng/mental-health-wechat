@@ -104,5 +104,5 @@ App({
     lastPlayInfo: '_last_playinfo',
     recordPlayInfo: '_record_play_info'
   },
-  towxml: require('/towxml/index.js')
+  towxml: require('/towxml/index')
 })

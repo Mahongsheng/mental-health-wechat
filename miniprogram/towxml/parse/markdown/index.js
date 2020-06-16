@@ -1,5 +1,5 @@
 let hljs;
-hljs = require('../highlight/index');
+// hljs = require('../highlight/index');
 
 const config = require('../../config'),
     mdOption = (()=>{

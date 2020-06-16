@@ -60,4 +60,3 @@
 }
 
 /**代码高亮样式**/
-@import '../../parse/highlight/style/github.wxss';
